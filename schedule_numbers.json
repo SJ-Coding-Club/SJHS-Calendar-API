@@ -1,0 +1,23 @@
+// yeah, I'm gonna need to fill this out LOL
+
+{
+    "2021" :
+    {
+        "1":
+        {
+            "4": "1 or something, i don't know"
+        }
+    },
+    "Day 1" :
+    {
+        "X" : "7:55 - 8:51",
+        "A" : "8:54 - 9:47",
+        "B" : "9:50 - 10:43",
+        "C" : "10:45 - 12:28",
+        "D" : "12:31 - 1:21",
+        "E" : "1:24 - 2:15"
+    },
+    "Day 2" : { // Too lazy to fill all this out right now but you get the picture
+        "" : ""
+    }
+}
