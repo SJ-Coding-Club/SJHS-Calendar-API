@@ -12,8 +12,11 @@ def landing_page():
 
 @app.route('/<int:day>/<int:month>/<int:year>')
 def get_events(day, month, year):
-    events = CalendarEvents(day, month, year).get_event_dictionary()
-    return jsonify(events)
+    try:
+        events = CalendarEvents(day, month, year).get_event_dictionary()
+        return jsonify(events)
+    except:
+        return landing_page()
 
 if __name__ =='__main__':
     app.run(debug=True)
