@@ -1,8 +1,7 @@
 # Simple flask app to return JSON of calendar API
-from flask import Flask, jsonify
-from cal import CalendarEvents
-
-app = Flask(__name__)
+from flask import jsonify
+from sj_cal.cal import CalendarEvents
+from sj_cal import app
 
 @app.route('/')
 def landing_page():
@@ -17,6 +16,4 @@ def get_events(day, month, year):
         return jsonify(events)
     except:
         return landing_page()
-
-if __name__ =='__main__':
-    app.run(debug=True)
+        
